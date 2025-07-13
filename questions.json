@@ -1,0 +1,222 @@
+
+{
+  "Functions and Graphs": [
+    {
+      "id": 1,
+      "topic": "Functions and Graphs",
+      "text": "What kind of function does this graph represent?",
+      "functionString": "f(x) = 2x - 1",
+      "functionBody": "2*x - 1",
+      "answerType": "multiple-choice",
+      "options": ["Linear", "Quadratic", "Exponential", "Constant"],
+      "correctAnswer": "Linear",
+      "explanation": "The graph is a straight line, which is characteristic of a linear function of the form f(x) = mx + c.",
+      "domain": [-5, 5],
+      "step": 0.1
+    },
+    {
+      "id": 2,
+      "topic": "Functions and Graphs",
+      "text": "For the function f(x) = x² - 3, what is the value of f(2)?",
+      "functionString": "f(x) = x² - 3",
+      "functionBody": "x*x - 3",
+      "answerType": "numeric",
+      "correctAnswer": "1",
+      "explanation": "To find f(2), substitute x=2 into the function: f(2) = (2)² - 3 = 4 - 3 = 1.",
+      "domain": [-4, 4],
+      "step": 0.1
+    }
+  ],
+  "Rate of Change": [
+    {
+      "id": 11,
+      "topic": "Rate of Change",
+      "text": "What is the average rate of change of f(x) = x² from x=1 to x=3?",
+      "functionString": "f(x) = x²",
+      "functionBody": "x*x",
+      "answerType": "numeric",
+      "correctAnswer": "4",
+      "explanation": "The average rate of change is (f(3) - f(1)) / (3 - 1). f(3) = 3² = 9 and f(1) = 1² = 1. So, the rate is (9 - 1) / 2 = 8 / 2 = 4.",
+      "domain": [-1, 4],
+      "step": 0.1
+    }
+  ],
+  "Introduction to Limits": [
+    {
+      "id": 21,
+      "topic": "Introduction to Limits",
+      "text": "Looking at the graph, what value does f(x) approach as x gets closer and closer to 2?",
+      "functionString": "f(x) = 2x + 1",
+      "functionBody": "2*x + 1",
+      "answerType": "numeric",
+      "correctAnswer": "5",
+      "explanation": "As x approaches 2, the function value gets closer to 2(2) + 1 = 5. You can see this on the graph by following the line towards x=2 from both sides.",
+      "domain": [-1, 5],
+      "step": 0.1
+    }
+  ],
+  "Limits and Continuity": [
+    {
+      "id": 101,
+      "topic": "Limits and Continuity",
+      "text": "What is the limit of f(x) as x approaches 1? Note that the function is undefined at x=1.",
+      "functionString": "f(x) = (x² - 1) / (x - 1)",
+      "functionBody": "(x*x - 1) / (x - 1)",
+      "answerType": "numeric",
+      "correctAnswer": "2",
+      "explanation": "The expression can be simplified by factoring the numerator: (x-1)(x+1) / (x-1). The (x-1) terms cancel out, leaving f(x) = x+1 for x ≠ 1. As x approaches 1, f(x) approaches 1+1=2.",
+      "domain": [-2, 4],
+      "step": 0.05
+    },
+    {
+      "id": 102,
+      "topic": "Limits and Continuity",
+      "text": "Which statements are true for the function f(x) = |x| at the point x=0?",
+      "functionString": "f(x) = |x|",
+      "functionBody": "Math.abs(x)",
+      "answerType": "multiple-select",
+      "options": ["The function is continuous", "The function is differentiable", "The limit exists"],
+      "correctAnswer": "[\"The function is continuous\",\"The limit exists\"]",
+      "explanation": "The function |x| is continuous at x=0 (the graph has no breaks) and the limit exists (it approaches 0 from both sides). However, it is not differentiable at x=0 due to the sharp corner.",
+      "domain": [-5, 5],
+      "step": 0.1
+    }
+  ],
+  "The Derivative": [
+    {
+      "id": 201,
+      "topic": "The Derivative",
+      "text": "What is the instantaneous rate of change (derivative) of f(x) = x² at x=2?",
+      "functionString": "f(x) = x²",
+      "functionBody": "x*x",
+      "answerType": "numeric",
+      "correctAnswer": "4",
+      "explanation": "The derivative of f(x) = x² is f'(x) = 2x. Evaluating at x=2 gives f'(2) = 2 * 2 = 4. This represents the slope of the tangent line to the parabola at x=2.",
+      "domain": [-1, 4],
+      "step": 0.1
+    },
+    {
+      "id": 202,
+      "topic": "The Derivative",
+      "text": "What is the rate of change (slope) of the function f(x) = -3x + 5?",
+      "functionString": "f(x) = -3x + 5",
+      "functionBody": "-3*x + 5",
+      "answerType": "numeric",
+      "correctAnswer": "-3",
+      "explanation": "For a linear function in the form f(x) = mx + c, the slope 'm' is the constant rate of change. Here, m = -3.",
+      "domain": [-5, 5],
+      "step": 0.1
+    }
+  ],
+  "Differentiation Rules": [
+    {
+      "id": 301,
+      "topic": "Differentiation Rules",
+      "text": "Using the Power Rule, what is the derivative of f(x) = x³ at x=2?",
+      "functionString": "f(x) = x³",
+      "functionBody": "x*x*x",
+      "answerType": "numeric",
+      "correctAnswer": "12",
+      "explanation": "The Power Rule states that the derivative of xⁿ is nxⁿ⁻¹. So, the derivative of x³ is 3x². At x=2, the value is 3 * (2)² = 3 * 4 = 12.",
+      "domain": [-1, 3],
+      "step": 0.1
+    },
+    {
+      "id": 302,
+      "topic": "Differentiation Rules",
+      "text": "Using the Chain Rule, find the derivative of f(x) = (x² + 1)³ at x=1.",
+      "functionString": "f(x) = (x² + 1)³",
+      "functionBody": "Math.pow(x*x + 1, 3)",
+      "answerType": "numeric",
+      "correctAnswer": "24",
+      "explanation": "Let u = x²+1. Then f(u) = u³. The derivative is f'(x) = f'(u) * u'(x) = (3u²) * (2x) = 3(x²+1)² * 2x. At x=1, this is 3(1²+1)² * 2(1) = 3(2)² * 2 = 3 * 4 * 2 = 24.",
+      "domain": [-2, 2],
+      "step": 0.1
+    }
+  ],
+  "Applications of the Derivative": [
+    {
+      "id": 401,
+      "topic": "Applications of the Derivative",
+      "text": "Click on the local maximum of the function on the graph.",
+      "functionString": "f(x) = -x² + 6x",
+      "functionBody": "-x*x + 6*x",
+      "answerType": "click-on-graph",
+      "correctAnswer": "{\"x\":3,\"y\":9}",
+      "highlightPoints": [{"x": 3, "y": 9, "label": "Maximum"}],
+      "explanation": "To find the maximum, find the derivative, f'(x) = -2x + 6, and set it to zero. -2x + 6 = 0 solves to x=3. The point on the graph is (3, 9). The graph is a downward-facing parabola, so this is a maximum.",
+      "domain": [-1, 7],
+      "step": 0.1
+    }
+  ],
+  "Integration": [
+    {
+      "id": 501,
+      "topic": "Integration",
+      "text": "The graph shows f(x) = 4. What is the area under the curve from x=0 to x=3 (the definite integral)?",
+      "functionString": "f(x) = 4",
+      "functionBody": "4",
+      "answerType": "numeric",
+      "correctAnswer": "12",
+      "explanation": "The area under the constant function f(x)=4 is a rectangle with width 3 (from x=0 to x=3) and height 4. The area is width × height = 3 × 4 = 12.",
+      "domain": [-1, 5],
+      "step": 0.1
+    }
+  ],
+  "The Fundamental Theorem of Calculus": [
+    {
+      "id": 601,
+      "topic": "The Fundamental Theorem of Calculus",
+      "text": "If F'(x) = 2x and F(0) = 0, what is F(3)?",
+      "functionString": "f(x) = 2x",
+      "functionBody": "2*x",
+      "answerType": "numeric",
+      "correctAnswer": "9",
+      "explanation": "The Fundamental Theorem of Calculus links derivatives and integrals. The integral (antiderivative) of 2x is x² + C. Since F(0)=0, we find C=0. So, F(x) = x², and F(3) = 3² = 9.",
+      "domain": [-1, 4],
+      "step": 0.1
+    }
+  ],
+  "Techniques of Integration": [
+    {
+      "id": 701,
+      "topic": "Techniques of Integration",
+      "text": "What is the antiderivative of f(x) = 3x²?",
+      "functionString": "f(x) = 3x²",
+      "functionBody": "3*x*x",
+      "answerType": "multiple-choice",
+      "options": ["x³ + C", "6x + C", "x² + C", "3x³ + C"],
+      "correctAnswer": "x³ + C",
+      "explanation": "Using the reverse power rule for integration, we add 1 to the exponent (2+1=3) and divide by the new exponent (3/3=1). This gives us x³. Don't forget the constant of integration, +C!",
+      "domain": [-3, 3],
+      "step": 0.1
+    },
+    {
+      "id": 702,
+      "topic": "Techniques of Integration",
+      "text": "Using u-substitution, what is the antiderivative of f(x) = 2x * cos(x²)?",
+      "functionString": "f(x) = 2x * cos(x²)",
+      "functionBody": "2*x*Math.cos(x*x)",
+      "answerType": "multiple-choice",
+      "options": ["sin(x²)", "-sin(x²)", "cos(x²)", "2sin(x)"],
+      "correctAnswer": "sin(x²)",
+      "explanation": "Let u = x². Then du = 2x dx. The integral becomes ∫cos(u)du, which is sin(u) + C. Substituting back gives sin(x²) + C.",
+      "domain": [-3, 3],
+      "step": 0.1
+    }
+  ],
+  "Applications of Integration": [
+    {
+      "id": 801,
+      "topic": "Applications of Integration",
+      "text": "What is the total area between the curve f(x) = x² and the x-axis from x=-2 to x=2?",
+      "functionString": "f(x) = x²",
+      "functionBody": "x*x",
+      "answerType": "numeric",
+      "correctAnswer": "5.33",
+      "explanation": "The area is the definite integral of x² from -2 to 2. The integral is (x³/3). Evaluating from -2 to 2 gives (2³/3) - ((-2)³/3) = (8/3) - (-8/3) = 16/3 ≈ 5.33.",
+      "domain": [-3, 3],
+      "step": 0.1
+    }
+  ]
+}
