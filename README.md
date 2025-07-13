@@ -1,3 +1,8 @@
+# Snap
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9952789d-07af-4b5b-8db0-26cfd1ff41ff" />
+
+
 # Run and deploy your AI Studio app
 
 This contains everything you need to run your app locally.
